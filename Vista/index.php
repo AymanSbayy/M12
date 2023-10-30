@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Wonderfull Travels</title>
-    <link rel="stylesheet" href="Estils/estils.css">
+    <link rel="stylesheet" href="../Estils/estils.css">
     <script src="../index.php"></script>
 </head>
 
@@ -18,16 +18,16 @@
             <input type="date" id="fecha_ida" name="fecha_ida" required><br><br>
 
             <label for="continente">Continent</label>
-            <form action="<?php echo $_SERVER['PHP_SELF']  ?>" method="post">
-                <select id="continente" name="continente" required onchange="this.form.submit()">
+            <form action="#" method="post">
+                <select id="continente" name="continente" required onchange="getContinent()">
                     <option value="."></option>
                     <option value="america">Amèrica</option>
                     <option value="europa">Europa</option>
                     <option value="asia">Àsia</option>
                     <option value="africa">Àfrica</option>
-                    <option value="oceania">Oceania</option </select><br><br>
-                        <!-- Aquí hauries d'afegir opcions pels països segons el continent seleccionat -->
+                    <option value="oceania">Oceania</option>
                 </select><br><br>
+                <!-- Aquí hauries d'afegir opcions pels països segons el continent seleccionat -->
             </form>
             <label for="num_pasajeros">Nombre de Passatgers*</label>
             <input type="number" id="num_pasajeros" name="num_pasajeros" value="0" required><br><br>
@@ -54,7 +54,6 @@
             <label for="telefono">Telèfon*</label>
             <input type="tel" id="telefono" name="telefono" required><br><br>
         </div>
-        <?php if ($html != "") echo $html;?>
         
     </form>
 </body>

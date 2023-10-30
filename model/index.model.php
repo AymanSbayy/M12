@@ -1,8 +1,8 @@
 <?php 
 $errors = "";
 $html = "";
-if (isset($_POST['continente'])) {
-    $continente = $_POST['continente'];
+if (isset($_POST['continent'])) {
+    $continente = $_POST['continent'];
 } else {
     $continente = "";
 }
@@ -32,7 +32,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         
     }
 }
-
-include "Vista/index.vista.php"
 
 ?>
